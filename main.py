@@ -1,14 +1,23 @@
-# 1st program
-print((9**0.5)*5)
+class Example:
 
-# 2st program
-print((9.99>9.98)and(1000!=1000.1))
+  def __new__(cls, *args, **kwargs):
 
-# 3rd program
-print(2*2+2)
-print(2*(2+2))
-print((2*2+2)==(2*(2+2)))
+      print(args)
 
-# 4rd program
-x='123.456'
-print(int(float(x)*10)%10)
+      print(kwargs)
+
+      return object.__new__(cls)
+
+
+
+  def __init__(self, first, second, third):
+
+      print(first)
+
+      print(second)
+
+      print(third)
+
+
+
+ex = Example('data', second=25, third=3.14)
