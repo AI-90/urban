@@ -79,11 +79,14 @@ class Cube(Figure) :
         self.__sides =[]
         for _ in range(12):
             self.__sides.append(side)
-            print(self.__sides)
+
 
     def get_volume(self):
         a = self.get_sides()[0]
         return a ** 3
+
+    def get_sides(self):
+        return self.__sides
 
 circle1 = Circle((200, 200, 100), 10) # (Цвет, стороны)
 
