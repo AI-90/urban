@@ -1,5 +1,5 @@
 
-def personal_sum(numbers:list):
+def personal_sum(numbers):
     result = 0
     incorrect_data = 0
     for number in numbers:
