@@ -18,6 +18,6 @@ def sum_three(a, b, c):
 
 
 
-result = sum_three(0, 0, 2)
+result = sum_three(2, 3, 6)
 
 print(result)
